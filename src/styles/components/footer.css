@@ -1,0 +1,36 @@
+.footer {
+    display: flex;
+    gap: 10%;
+    justify-content: space-between;
+    height: 3em;
+}
+
+.footer__div {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    color: var(--base);
+}
+
+.footer__text{
+    font-size: var(--size-xs);
+    font-weight: 700;
+    text-align: center;
+}
+
+.social__link {
+    display: flex;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+}
+
+.social__logo {
+    fill: var(--base);
+    transition: fill 0.3s;
+}
+
+a:hover .social__logo{
+    fill: var(--primary);
+}
