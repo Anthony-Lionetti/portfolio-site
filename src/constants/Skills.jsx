@@ -1,40 +1,34 @@
 import {
   Python,
+  SQL,
+  AWS,
+  PyTorch,
   React,
-  JavaScript,
-  MySQL,
-  Postgress,
-  Django,
 } from "../assets/tech-logos";
 export const skills = [
   {
     name: "Python",
     svg: Python,
+    level: 5,
+  },
+  {
+    name: "SQL",
+    svg: SQL,
+    level: 5,
+  },
+  {
+    name: "AWS",
+    svg: AWS,
     level: 4,
   },
   {
-    name: "MySQL",
-    svg: MySQL,
-    level: 4,
-  },
-  {
-    name: "JavaScript",
-    svg: JavaScript,
+    name: "PyTorch",
+    svg: PyTorch,
     level: 4,
   },
   {
     name: "React",
     svg: React,
-    level: 3,
-  },
-  {
-    name: "Postgress",
-    svg: Postgress,
-    level: 3,
-  },
-  {
-    name: "Django",
-    svg: Django,
     level: 3,
   },
 ];
