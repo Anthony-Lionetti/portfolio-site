@@ -3,8 +3,8 @@ import { socials } from "../constants/Socials";
 
 function Hero() {
   return (
-    <section className="hero">
-      <Heading color="green" size={"9"}>Hi I&apos;m Anthony</Heading>
+    <section className="section">
+      <Heading size={"9"} color="green">Hi I&apos;m Anthony</Heading>
       <Text size={"5"}>AI Engineer & Consultant</Text>
       <div className="socials">
         {socials.map((item) => {

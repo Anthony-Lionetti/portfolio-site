@@ -33,11 +33,12 @@ button {
 }
 
 .ToggleGroupItem:hover {
+    cursor: pointer;
     background-color: var(--green-4);
 }
 
 .ToggleGroupItem[data-state="on"] {
-    background-color: var(--green-8);
+    background-color: var(--green-9);
     color: var(--green-12);
 }
 
