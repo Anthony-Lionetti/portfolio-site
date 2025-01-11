@@ -1,19 +1,14 @@
-import Nav from "./components/Nav/Nav";
-import { Hero, About, Projects, Contact } from "./components/main";
+import Nav from "./components/Nav";
+import Hero from "./components/Hero";
 import Footer from "./components/Footer";
 
 function App() {
   return (
-    <>
+    <main className="main container">
       <Nav />
-      <main>
-        <Hero />
-        <About />
-        <Projects />
-        <Contact />
-      </main>
+      <Hero />
       <Footer />
-    </>
+    </main>
   );
 }
 
