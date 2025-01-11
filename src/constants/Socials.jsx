@@ -1,22 +1,3 @@
-export const links = [
-  {
-    title: "Home",
-    link: "#Home",
-  },
-  {
-    title: "About",
-    link: "#About",
-  },
-  {
-    title: "Projects",
-    link: "#Projects",
-  },
-  {
-    title: "Contact",
-    link: "#Contact",
-  },
-];
-
 export const socials = [
   {
     social: "LinkedIn",
@@ -34,7 +15,7 @@ export const socials = [
         </g>
       </svg>
     ),
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/anthony-lionetti-1aa07a242/",
   },
   {
     social: "GitHub",
@@ -52,6 +33,6 @@ export const socials = [
         </g>
       </svg>
     ),
-    link: "https://github.com/",
+    link: "https://github.com/Anthony-Lionetti",
   },
 ];

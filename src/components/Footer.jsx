@@ -1,30 +1,19 @@
-import { socials } from "../constants/NavLinks";
-import "../styles/components/footer.css";
+import { Flex, Text } from "@radix-ui/themes";
+import rpi from "../../public/rpi.svg"
+import { EnvelopeClosedIcon } from "@radix-ui/react-icons";
 
 function Footer() {
   return (
-    <footer className="container section">
-      <hr className="hr" />
-      <div className="footer">
-        <div className="footer__div">
-          <p className="footer__text">~ By Anthony Lionetti ~</p>
-        </div>
-        <div className="footer__div">
-          {socials.map((site) => {
-            return (
-              <a
-                key={site.social}
-                href={site.link}
-                rel="noreferrer"
-                target="_blank"
-                className="social__link"
-              >
-                {site.svg}
-              </a>
-            );
-          })}
-        </div>
-      </div>
+    <footer className="footer">
+      <Text color="gray">~ Anthony Lionetti ~</Text> 
+      <a href="mailto:lionetti.tech@gmail.com" className="footer-email">
+        <EnvelopeClosedIcon color="green" style={{height:"1rem", width:"1rem"}} />
+        <Text>Lionetti.tech@gmail.com</Text>
+      </a> 
+      <Flex align={"center"} gap={"2"}>
+        <Text color="gray">Courtesy of my</Text>
+        <img src={rpi} className="rpi-img" />
+      </Flex>
     </footer>
   );
 }
