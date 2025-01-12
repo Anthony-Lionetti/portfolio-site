@@ -24,8 +24,8 @@ export default function Nav() {
                 <TabNav.Link href="/bookshelf" active={location === "/bookshelf"}>
                     My Bookshelf 
                 </TabNav.Link>
-                <TabNav.Link href="/fundamentals" active={location === "/fundamentals"}>
-                    AI Fundamentals 
+                <TabNav.Link href="/posts" active={location === "/posts"}>
+                    Posts 
                 </TabNav.Link>
             </TabNav.Root>
             

@@ -10,6 +10,8 @@
 
 .section {
   display: flex;
+  height: 85dvh;
+  flex: 1; 
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -20,8 +22,6 @@
   height: 100dvh;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
 }
 
 .nav {
@@ -29,6 +29,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 0;
+  height: 5dvh;
 }
 
 .nav-group {
@@ -74,6 +75,7 @@ a:hover .social__logo {
 .footer {
   display: flex;
   flex-direction: column;
+  height: 10dvh;
   gap: 1rem;
   justify-content: center;
   align-items: center;
