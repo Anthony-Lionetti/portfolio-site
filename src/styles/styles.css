@@ -32,11 +32,15 @@
   height: 5dvh;
 }
 
-.nav-group {
+.desktop-nav {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   gap: 1.5rem;
+}
+
+.mobile-nav {
+  display: none;
 }
 
 /* Hero Styles */
@@ -69,6 +73,22 @@ a:hover .social__logo {
   width: 1.25rem;
 }
 
+/* Bookshelf */
+.book-container {
+  width: 90%;
+  padding-inline: 1rem;
+}
+
+.book-card-container {
+  overflow: auto;
+  flex: 1 0 auto;
+  height: 0;
+}
+
+.book-card {
+  flex: 0 0 auto;
+}
+
 
 /* Footer */
 
@@ -97,13 +117,52 @@ a:hover .social__logo {
 }
 
 /* xs */
-/* @media (min-width: 520px) {} */
+@media (max-width: 520px) {
+  .container {
+    width: 90%;
+  }
+
+  /* Book */
+  .book-card {
+    height: auto;
+  } 
+  .book-card-title {
+    font-size: 1rem;
+  } 
+  .book-card-author {
+    font-size: .75rem;
+  } 
+  .book-heading {
+    text-align: center;
+    font-size: 2rem;
+  }
+  .hiku {
+    display: none;
+  }
+
+  .footer {
+    height: 10dvh;
+    gap: .25rem;
+    padding: 1rem 0;
+  }
+}
 
 /* sm */
 /* @media (min-width: 768px) {} */
 
 /* md */
-/* @media (min-width: 1024px) {} */
+@media (max-width: 1024px) {
+  .desktop-nav{
+      display: none;
+  }
+  .mobile-nav {
+      display: flex;
+  }
+
+  .book-card-description {
+    display: none;
+  } 
+}
 
 /* lg */
 /* @media (min-width: 1280px) {} */

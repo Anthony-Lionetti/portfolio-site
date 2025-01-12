@@ -67,8 +67,8 @@ export const entireBookShelf =
     "title": "The Psychology of Money",
     "author": "Morgan Housel",
     "overview": "Explores how behavior, rather than knowledge, influences financial success, with timeless lessons on wealth and happiness.",
-    "rating": 0,
-    "yearsRead": []
+    "rating": 4.5,
+    "yearsRead": [2023]
   },
   {
     "title": "How to Win Friends and Influence People",
@@ -81,7 +81,7 @@ export const entireBookShelf =
     "title": "Thinking in Bets",
     "author": "Annie Duke",
     "overview": "A poker champion’s take on decision-making, showing how to use uncertainty to improve thinking in business and life.",
-    "rating": 4.5,
+    "rating": 4.4,
     "yearsRead": [2024]
   },
   {
@@ -165,7 +165,7 @@ export const entireBookShelf =
     "title": "Invent and Wander: The Collected Writings of Jeff Bezos",
     "author": "Jeff Bezos",
     "overview": "A collection of writings by Jeff Bezos, the founder of Amazon, including his annual shareholder letters and other speeches and interviews, providing insight into his business philosophy and leadership style.",
-    "rating": 4.4,
+    "rating": 4.2,
     "yearsRead": [2023]
   },
   {
@@ -277,7 +277,7 @@ export const entireBookShelf =
     "title": "Beyond Order: 12 More Rules for Life",
     "author": "Jordan B. Peterson",
     "overview": "This book offers a follow-up to Jordan B. Peterson's \"12 Rules for Life\", offering further guidance on how to navigate the complexities of modern life. It emphasizes the importance of finding balance between order and chaos.",
-    "rating": 3.7,
+    "rating": 3.5,
     "yearsRead": [2023]
   },
   {
@@ -302,7 +302,7 @@ export const entireBookShelf =
     "yearsRead": [2024]
   },
   {
-    "title": "Status: Why Is It Everywhere? Why Does It Matter?",
+    "title": "The Status Game",
     "author": "Will Storr",
     "overview": "This non-fiction book explores the concept of status in human society. It examines how status operates, its impact on our behavior, its pervasiveness across cultures, and its role in shaping our lives and motivations. It delves into the psychology and sociology of status, explaining why we are driven by it, and how status games are played out in various aspects of life.",
     "rating": 0,

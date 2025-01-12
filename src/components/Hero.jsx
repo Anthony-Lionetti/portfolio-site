@@ -4,8 +4,8 @@ import { socials } from "../constants/Socials";
 function Hero() {
   return (
     <section className="section">
-      <Heading size={"9"} color="green">Hi I&apos;m Anthony</Heading>
-      <Text size={"5"}>AI Engineer & Consultant</Text>
+      <Heading size={"9"} align={"center"} color="green">Hi I&apos;m Anthony</Heading>
+      <Text size={"5"} align={'center'}>AI Engineer & Consultant</Text>
       <div className="socials">
         {socials.map((item) => {
           return <a 

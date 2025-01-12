@@ -3,39 +3,31 @@ import { entireBookShelf } from "../constants/Bookshelf"
 import { StarIcon } from "@radix-ui/react-icons"
 
 function Bookself() {
-  const sortedBooks = entireBookShelf.sort((a, b) => a.rating <= b.rating);
-  const currentBook = entireBookShelf.filter((book) => book.yearsRead.length > 0 && book.rating === 0)[0] 
+const sortedBooks = entireBookShelf.sort((a, b) => {
+    // Primary sort by rating (descending)
+    const ratingDiff = b.rating - a.rating;
+    if (ratingDiff !== 0) return ratingDiff;
+
+    // Secondary sort by yearsRead (non-empty first)
+    return (b.yearsRead.length > 0 ? 1 : 0) - (a.yearsRead.length > 0 ? 1 : 0);
+  });
+
 
   return (
     <section className='section'>
-      <Flex direction={"row"} justify={"between"} width={"80%"}>
-        <Flex direction={"column"} justify={"start"} gap={"1"}>
-          <Heading size={"8"} color="green">Welcome to my Bookshelf :)</Heading>
-          <Blockquote size={"3"} color="green" style={{width:"60ch"}}>
-            <Text color="gray">I hated reading. <br />Three years ago that all changed. <br />My mind has opened.</Text>
-          </Blockquote>
-        </Flex>
-        <Flex direction={"column"} justify={"center"} flexGrow={"1"}>
-            <Heading size={"4"} color="green" mb={".5rem"}>Currently Reading:</Heading>
-            <Heading size={"3"}>{currentBook.title.split(":")[0]}</Heading>
-            <Heading size={"2"} color="gray">By {currentBook.author}</Heading>
-        </Flex>
-
+      <Flex direction={"column"} justify={"start"} gap={"1"} className="book-container">
+        <Heading size={"8"} color="green" className="book-heading">Welcome to my Bookshelf :)</Heading>
+        <Blockquote size={"3"} color="green" mt={".5rem"} ml={".5%"} className="hiku">
+          <Text color="gray">I hated reading. <br />Three years ago that all changed. <br />My mind has opened.</Text>
+        </Blockquote>
       </Flex>
 
       {/* Book Cards */}
       <Flex 
         direction={"column"} 
-        gap={"3"} 
-        width={"82%"} 
-        px={"1rem"}
+        gap={"3"}  
         pt={"1rem"} 
-        style={{
-          overflow: "auto",
-          flexGrow: 1,    // allows the container to grow
-          flexShrink: 1,  // allows the container to shrink
-          height: 0    // important for proper scrolling in a flex container
-        }}
+        className="book-container book-card-container"
       >
         {sortedBooks.map((book) => {
           return <BookCard key={book.author} {...book} />
@@ -54,15 +46,15 @@ function BookCard({author, title, overview, rating, yearsRead}){
   const badgeColor = rating > 3.5 ? "green" : "yellow"
 
   return (
-    <Card style={{ flex: '0 0 auto' }}>
+    <Card className="book-card">
       <Flex align={"top"} gap={"3"} style={{minHeight:'90px'}}>
         {/* Title & Author */}
         <Flex direction={"column"} gap={"2"} style={{width:"20ch"}}>
-          <Heading size={"5"}>{title.split(":")[0]}</Heading>
-          <Heading size={"2"} color="gray">{author}</Heading>
+          <Heading size={"5"} className="book-card-title">{title.split(":")[0]}</Heading>
+          <Heading size={"2"} color="gray" className="book-card-author">{author}</Heading>
         </Flex>
         {/* Description */}
-        <Flex align={"top"} style={{width:"45ch"}}>
+        <Flex align={"top"} style={{width:"45ch"}} className="book-card-description">
           <Text size={'1'}>{overview}</Text>
         </Flex>
 
