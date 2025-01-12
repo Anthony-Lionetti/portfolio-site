@@ -4,7 +4,7 @@ import App from "./App.jsx";
 import "@radix-ui/themes/styles.css";
 import "./styles/styles.css";
 import "./styles/colors.css";
-import { ThemeProvider } from "../context/ThemeContext.jsx";
+import { ThemeProvider } from "./context/ThemeContext.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

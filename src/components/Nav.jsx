@@ -5,7 +5,7 @@ import {
     SunIcon,
 } from "@radix-ui/react-icons";
 import "../styles/components/toggle_group.css"
-import { useTheme } from "../../context/ThemeContext";
+import { useTheme } from "../context/ThemeContext";
 import { useLocation } from "wouter";
 
 export default function Nav() {
@@ -22,7 +22,7 @@ export default function Nav() {
                     <Heading size="3">Home</Heading>
                 </TabNav.Link>
                 <TabNav.Link href="/bookshelf" active={location === "/bookshelf"}>
-                    My Bookshelf 
+                    Books 
                 </TabNav.Link>
                 <TabNav.Link href="/posts" active={location === "/posts"}>
                     Posts 

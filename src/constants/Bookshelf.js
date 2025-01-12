@@ -124,7 +124,7 @@ export const entireBookShelf =
     "author": "Marcus Aurelius",
     "overview": "A collection of personal writings from the Roman Emperor reflecting on Stoic philosophy and the art of living.",
     "rating": 0,
-    "yearsRead": []
+    "yearsRead": [2023, 2024]
   },
   {
     "title": "Benjamin Franklin",
